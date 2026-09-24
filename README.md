@@ -10,6 +10,12 @@ New to graphs? Read **[GRAPH_INTUITION.md](GRAPH_INTUITION.md)** first. It expla
 from zero, what a graph is, why you would build one here, and how this one is put
 together. This README is the technical overview.
 
+There are two notebooks. `identity_spine_to_graph_demo.py` builds the golden spine and a
+first relationship graph. `graph_ladder_walkthrough.py` then takes those tables and walks
+up the **build-vs-buy ladder** (managed semantics, edge-table-into-Genie, native traversal,
+and graph algorithms), all natively on one shared edge table. See
+**[LADDER.md](LADDER.md)** for that story.
+
 ---
 
 ## What it is
@@ -95,7 +101,9 @@ a checkpoint dir on a single-user cluster.
 
 | File | Purpose |
 |---|---|
-| `identity_spine_to_graph_demo.py` | The Databricks notebook (source format). |
+| `identity_spine_to_graph_demo.py` | The base notebook: identity spine and first relationship graph. |
+| `graph_ladder_walkthrough.py` | The ladder notebook: Rungs 0, 1, 4 and 6 on one shared edge table. |
+| `LADDER.md` | The build-vs-buy ladder explained (what each rung is, and the compute split). |
 | `GRAPH_INTUITION.md` | Plain-language explanation of the graph, for any reader. |
 | `README.md` | This overview. |
 
